@@ -18,4 +18,5 @@ We formulated the optimization problem using linear programming techniques, spec
 - Implementing more sophisticated optimization algorithms for larger datasets.
 
 ## Contribution
+This project is made by Aman Shukla and Anshum Dwivedi.
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or create a pull request.
