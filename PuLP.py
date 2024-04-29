@@ -1,13 +1,16 @@
+#Linear Optimization Project
+#Author: Aman Shukla & Anshum Dwivedi
+
 
 from pulp import *
 
 #Elementary features:
 
-lp = LpProblem("Bakery_Problem", LpMaximize)
+lp = LpProblem("Cafeteria_Problem", LpMaximize)
 
 #Define variables
-x1 = LpVariable(name="Bowdoin_log", lowBound=0, cat="Integer")
-x2 = LpVariable(name="Chocolate_cake", lowBound=0, cat="Integer")
+x1 = LpVariable(name="Bread_Pakoda", lowBound=0, cat="Integer")
+x2 = LpVariable(name="Samosa", lowBound=0, cat="Integer")
 
 #Add the objective function
 lp += 10 * x1 + 5 * x2
@@ -31,11 +34,11 @@ print("OPT =", value(lp.objective))
 '''
 #Advanced features
 
-lp = LpProblem("Bakery_Problem", LpMaximize)
+lp = LpProblem("Cafeteria_Problem", LpMaximize)
 
 #Define a dictionary of variables keyed by "indices"
 var_keys = [1,2] 
-x = LpVariable.dicts("Bakery_item", var_keys, lowBound=0, cat="Integer")
+x = LpVariable.dicts("Cafeteria_item", var_keys, lowBound=0, cat="Integer")
 print(x)
 
 #Add the objective function
